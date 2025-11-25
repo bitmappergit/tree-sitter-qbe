@@ -82,7 +82,7 @@ module.exports = grammar({
             $.temporary,
         ),
 
-        _string: $ => /\"[^\"]\"/,
+        _string: $ => /"[^"]*"/,
         
         section_name: $ => $._string,
         section_flags: $ => $._string,
